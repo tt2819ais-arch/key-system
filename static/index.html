@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>License Panel — управление ключами</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/home" data-link>◈ License Panel</a>
+  <nav class="nav" id="nav" hidden>
+    <a href="/home" data-link>Главная</a>
+    <a href="/keys" data-link>Ключи</a>
+    <a href="/create-key" data-link>Создать ключ</a>
+    <a href="/sellers" data-link>Селлеры</a>
+    <a href="/logs" data-link>Логи</a>
+    <a href="/settings" data-link>Настройки</a>
+  </nav>
+  <div class="top-right">
+    <button id="themeBtn" class="btn ghost" title="Тема">◐</button>
+    <button id="logoutBtn" class="btn ghost" hidden>Выйти</button>
+  </div>
+</header>
+<main id="app" class="wrap"></main>
+<footer class="foot">License Panel · <span id="apiLabel"></span></footer>
+<script>
+  window.API_BASE = ""; // same-origin: API и панель на одном домене (Deno)
+</script>
+<script src="/app.js" type="module"></script>
+</body>
+</html>

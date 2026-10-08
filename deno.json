@@ -1,8 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run --watch --allow-read --allow-net main.ts"
-  },
-  "imports": {
-    "@std/assert": "jsr:@std/assert@1"
+    "dev": "deno run -A main.js",
+    "deploy": "deployctl deploy --prod --project=cheat-panel --entrypoint=main.js"
   }
 }
