@@ -1,5 +1,3 @@
-import { serveFile } from "jsr:@std/http/file-server";
-
-Deno.serve((req: Request) => {
-    return serveFile(req, "./index.html");
-});
+// Шим: дашборд Deno по умолчанию ищет main.ts — отдаём ему наш main.js,
+// чтобы работало при любом entrypoint (main.ts или main.js).
+export { default } from "./main.js";
